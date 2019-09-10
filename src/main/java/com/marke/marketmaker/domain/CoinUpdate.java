@@ -12,8 +12,8 @@ import java.util.Date;
  */
 
 @Data
-@Document(collection = "currency_update")
-public class CurrencyUpdate {
+@Document(collection = "coin_update")
+public class CoinUpdate {
 
     /**
      * 更新类型
@@ -66,7 +66,7 @@ public class CurrencyUpdate {
     /**
      * 交易所币种数量
      */
-    private Integer cmcCurrencyNumber;
+    private Integer cmcCoinNumber;
 
     private Integer cmcExchangeNumber;
 

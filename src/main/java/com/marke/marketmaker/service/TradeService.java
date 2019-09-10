@@ -9,4 +9,10 @@ public interface TradeService {
      * @param trade
      */
     void save(Trade trade);
+
+    /**
+     * 获取交易数据
+     * @return
+     */
+    Trade getTradeData(String coin, String coinPair);
 }

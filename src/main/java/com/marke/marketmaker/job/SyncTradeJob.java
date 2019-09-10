@@ -19,8 +19,9 @@ public class SyncTradeJob extends QuartzJobBean {
     @Override
     protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException {
         LOGGER.info("start sync trade data...");
-        Trade trade = new Trade();
+        Trade trade = tradeService.getTradeData();
+        LOGGER.info("sync trade data is {}" + trade);
         tradeService.save(trade);
-
+        LOGGER.info("sync trade data end...");
     }
 }

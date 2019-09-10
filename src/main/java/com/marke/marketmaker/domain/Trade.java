@@ -7,6 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.Date;
 
 @Data
 @Document(collection = "trade")
@@ -14,6 +15,9 @@ public class Trade implements Serializable {
 
     private static final long serialVersionUID = -6383393809739910647L;
 
+    /**
+     * 唯一交易id
+     */
     @Field("id")
     private Long id;
 
@@ -25,16 +29,10 @@ public class Trade implements Serializable {
     private String currencyName;
 
     /**
-     * 交易所返回交易唯一编号
-     */
-    @Field("trade_id")
-    private Long tradeId;
-
-    /**
      * 时间
      */
     @Field("time")
-    private Timestamp time;
+    private Date ts;
 
     /**
      * 币对

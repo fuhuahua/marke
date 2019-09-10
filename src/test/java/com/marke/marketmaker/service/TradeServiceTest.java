@@ -18,7 +18,7 @@ public class TradeServiceTest {
     public void save() {
         Trade trade = new Trade();
         trade.setCurrencyName("LAMB");
-        trade.setTradeId(500848670l);
+        trade.setId(500848670l);
         trade.setAmount(0.0212);
         trade.setCurrencyPair("ethusdt");
         trade.setDirection("sell");

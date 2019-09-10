@@ -12,8 +12,8 @@ import java.sql.Timestamp;
  * @date 19-8-22 上午11:59
  */
 @Data
-@Document(collection = "currency")
-public class Currency extends BasicDomain {
+@Document(collection = "coin")
+public class Coin extends BasicDomain {
 
     /**
      * 币种名称
@@ -43,17 +43,17 @@ public class Currency extends BasicDomain {
 
 
     /**
-     * 总流通量
+     * 流通量
      */
     private Double circulatingSupply;
 
     /**
-     *
+     * 总量
      */
     private Double totalSupply;
 
     /**
-     *
+     * 最大供给量
      */
     private Double maxSupply;
 
